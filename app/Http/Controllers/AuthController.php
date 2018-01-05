@@ -14,7 +14,7 @@ use Illuminate\Http\Request;
 class AuthController extends Controller {
     public function __construct()
     {
-        $this->middleware('auth:api', ['except' => ['authenticate']]);
+        $this->middleware('auth:api', ['except' => ['authenticate','register']]);
     }
     public function authenticate(Request $request)
     {

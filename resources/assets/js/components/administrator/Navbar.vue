@@ -28,9 +28,10 @@
                     <router-link to="/portfolio" tag="li" ><a>Portfolio</a></router-link>
                     <router-link to="/logout" tag="li" ><a>Log Out</a></router-link>
                 </ul>
-                <ul v-for="row in menus" class="nav navbar-nav navbar-right" v-else>
+                <ul class="nav navbar-nav navbar-right" v-else>
                 <!-- Authentication Links -->
-                    <router-link :to="row.link" tag="li" ><a class="no-underline hover:underline text-grey-darker pr-3 text-sm">{{ row.name }}</a></router-link>
+                    <router-link to="/register" tag="li" ><a>Register</a></router-link>
+                    <router-link to="/login" tag="li" ><a>Login</a></router-link>
 
                 </ul>
             </div>
